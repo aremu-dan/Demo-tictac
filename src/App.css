@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+  position: relative;
+  top: calc((100vh - 80vmin) / 3);
+  margin: auto;
+  height: 80vmin;
+  width: 80vmin;
+  background: #243949;
+  border: 3px solid rgba(74, 56, 54, 0.4);
+  box-shadow: 0px 0px 10px 5px #5386b1;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 1.5vmin;
+  display: grid;
+  grid-template: auto auto auto / auto auto auto;
+  grid-gap: 1.5vmin;
+}
+
+.boxes {
+  position: relative;
+  background: #365d7c;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxes:nth-child(1) {
+  border-top-left-radius: 10px;
+}
+.boxes:nth-child(3) {
+  border-top-right-radius: 10px;
+}
+.boxes:nth-child(7) {
+  border-bottom-left-radius: 10px;
+}
+.boxes:nth-child(9) {
+  border-bottom-right-radius: 10px;
+}
+.boxes:active {
+  background: #182530;
+}
+
+.boxes > span {
+  position: absolute;
+  background: #243949;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+  padding: 0;
+  font-size: 17vmin;
+  text-transform: uppercase;
+  font-weight: bold;
+}
